@@ -1,0 +1,37 @@
+Titre: Allouer une chambre
+Objet: chercher le client et sa réservation, .........
+
+Acteurs: Employé (Initiateur), Système
+Type: Cas Nominal
+
+
+Précondition(s): le client a fait une réservation
+
+Postcondition(s): le client a une chambre attribuée
+
+
+
+Description:
+
+	1- L'employé cherche un client, avec son nom/prénom
+	2- L'employé chercher une réservation, avec son numéro ou les arg du client
+	3- Le système affiche une chambre répondant aux critères de la réservation
+	4- L'employé valide la proposition en allouant la chambre au client
+
+
+Flux alternatifs:
+
+	1-a- Le système n'a pas reconnu le client
+		1.1- Le système envoie un message d'erreur
+
+	2-a- Le système n'a pas reconnu la réservation
+		2.1- Le système envoie un message d'erreur
+		
+	4-a- La propostion ne plait pas à l'employé
+		4.1- L'employé consulte les chambres libres correspondantes aux critères
+		4.2- L'employé change le numéro de chambre pour la réservation
+
+
+Référents:
+
+	le client a une réservation: <include>

@@ -1,0 +1,36 @@
+Titre: Consulter les statistiques
+Objet: consulter le taux d'occupation d'un jour, consulter le taux d'occupation d'une période, consulter le taux de non présentation d'un jour
+
+Acteurs: Gérant (Initiateur), Système
+Type: Cas Nominal
+
+
+Précondition(s):
+
+Postcondition(s): le Gérant a consulté ce qu'il voulait.
+
+
+
+Description:
+
+	1- Le Gérant choisit (en appuyant sur un bouton, de même pour la suite) de consulter
+	      	     le taux d'occupation d'un jour
+	2- Le Système demande une date
+	3- Le Gérant rentre une date
+	4- Le Système envoie les résultats
+//????	      	      	5- le Gérant retourne au menu ???
+	6- Le Gérant choisit de consulter le taux d'occupation d'une période
+	7- Le Système demande une date de début et une date de fin
+	8- Le Gérant rentre deux dates
+	9- Le Système envoie les résultats
+	10- Le Gérant choisit de consulter le taux d'occupation d'un jour
+	11- Le Système demande une date
+	12- Le Gérant rentre une date
+	13- Le Système envoie les résultats
+
+Flux alternatifs:
+
+	9-a- Les dates sont dans le mauvais ordre
+	     9.1- Le Système affiche un message d'erreur d'utilisation
+	
+Référents: X
